@@ -24,6 +24,7 @@ pip install -e.[dev]
 ```
 
 ## References
+- [Mueller, Auge, Klimaschka, Knoll, "Neural Oscillations for Energy-Efficient Hardware Implementation of Sparsely Activated Deep Spiking Neural Networks", AAAI Practical DL, 2022](https://scholar.google.de/citations?view_op=view_citation&hl=de&user=xVfcQwsAAAAJ&authuser=1&citation_for_view=xVfcQwsAAAAJ:Tyk-4Ss8FVUC)
 - [Mueller, Studenyak, Auge, Knoll, "Spiking Transformer Networks: A Rate Coded Approach for Processing Sequential Data", ICSAI, 2021](https://mediatum.ub.tum.de/1633751)
 - [Mueller, Auge, Knoll, "Normalization Hyperparameter Search for Converted Spiking Neural Networks", Bernstein Conference, 2021](https://abstracts.g-node.org/conference/BC21/abstracts#/uuid/30534c50-fe09-4842-9ee6-f0127c52ce73)
 - [Mueller, Hansjakob, Auge, Knoll, "Minimizing Inference Time: Optimization Methods for Converted Deep Spiking Neural Networks", IJCNN, 2021](https://ieeexplore.ieee.org/abstract/document/9533874)
