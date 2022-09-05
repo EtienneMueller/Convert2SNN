@@ -1,8 +1,7 @@
-from models_rate import Linear
 import tensorflow as tf
 import numpy as np
-from utils  import convert, evaluate_conversion, get_normalized_weights
-# from conversion import convert
+import convert2snn
+#from convert2snn import utils
 
 
 tf.random.set_seed(1234)
@@ -42,7 +41,7 @@ def main():
 
     _, testacc = ann.evaluate(x_test, y_test, batch_size=batch_size, verbose=0)
     # weights = ann.get_weights()
-    weights = get_normalized_weights(ann, x_train, percentile=85)
+    weights = convert2snn.get_normalized_weights(ann, x_train, percentile=85)
 
     # Preprocessing for RNN
     x_train = np.expand_dims(x_train, axis=1)  # (60000, 784)->(60000, 1, 784)
@@ -51,9 +50,9 @@ def main():
     # y_rnn = y_train  # np.tile(x_test, (1, timesteps, 1))
 
     # Conversion to spiking model
-    snn = convert(ann, weights, x_test, y_test, err="SparseCategoricalCrossentropy")
+    snn = convert2snn.convert2rate(ann, weights, x_test, y_test, err="SparseCategoricalCrossentropy")
     # evaluate_conversion(snn, ann, x_test, y_test, testacc, timesteps=100)
-    evaluate_conversion(snn, ann, x_test, y_test, testacc)
+    convert2snn.evaluate_conversion(snn, ann, x_test, y_test, testacc)
 
 
 if __name__ == "__main__":
