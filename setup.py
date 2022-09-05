@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name='convert2snn',
-    version='0.0.2',
+    version='0.0.3',
     author='Etienne Mueller',
     author_email='etienne.mueller@tum.de',
     description='Convert conventional to spiking neural networks.',
@@ -32,6 +32,7 @@ setuptools.setup(
         "dev": [
             "pytest>=3.7",
             "check-manifest>=0.47"
+            "twine>=4.0"
         ],
     },
 )
