@@ -8,7 +8,6 @@ from tensorflow.python.training.tracking import data_structures
 
 from tensorflow.python.keras.layers.recurrent import DropoutRNNCellMixin
 from tensorflow.python.keras.layers.recurrent import _caching_device
-# from tensorflow.python.keras.layers.recurrent import _generate_zero_filled_state_for_cell
 
 
 class Linear(tf.keras.layers.Layer):
