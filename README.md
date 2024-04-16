@@ -1,7 +1,7 @@
 # Convert2SNN
 Tool for converting conventional neural networks to spiking neural networks.
 
-***Under continuous construction***
+***Currently developed in a private fork to add features from my current research at UniMelb. Will be made public at point of publication.***
 
 ## About
 This tool can be used to convert and optimize conventional neural networks that were trained in TensorFlow to spiking neural networks (SNN).
